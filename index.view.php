@@ -12,10 +12,20 @@
     </style>
   </head>
   <body>
-    <header>
-      <h1>
-        <?= $greeting; ?>
-      </h1>
-    </header>
+    <!-- eficient -->
+    <ul>
+      <?php foreach ($names as $name) : ?>
+        <li><?= $name  ?></li>
+      <?php endforeach; ?>
+    </ul>
+
+    <!-- u can use like this too -->
+      <!-- <ul>
+        <?php
+          foreach ($names as $name) {
+            echo "<li>$name</li>";
+          }
+        ?>
+      </ul> -->
   </body>
 </html>
