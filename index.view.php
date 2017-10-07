@@ -25,20 +25,18 @@
       </li>
 
       <li>
-        <strong>Personal Responsible: </strong><?= $task['assigned_to']; ?>
+        <strong>Perso Responsible: </strong><?= $task['assigned_to']; ?>
       </li>
 
       <li>
-        <strong>Status: </strong><?= $task['completed'] ? 'Complete' : 'Incomplete'; ?>
+        <strong>Status: </strong>
+
+        <?php if ($task['completed']) : ?>
+          <span>&#9989;</span>
+        <?php else : ?>
+          <span>Incomplete</span>
+        <?php endif; ?>
       </li>
     </ul>
-
-    <!-- <ul>
-      <?php foreach ($task as $heading => $value) : ?>
-        <li>
-          <strong><?= ucwords($heading); ?>:</strong> <?= $value ?>
-        </li>
-      <?php endforeach; ?>
-    </ul> -->
   </body>
 </html>
