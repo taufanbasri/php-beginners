@@ -13,6 +13,11 @@
   </head>
   <body>
     <ul>
+      <li><a href="/about.php">About Page</a></li>
+      <li><a href="/contact.php">Contact Page</a></li>
+    </ul>
+    <h1>My Tasks</h1>
+    <ul>
       <?php foreach ($tasks as $task) : ?>
         <li>
           <?php if($task->completed) : ?>
