@@ -1,5 +1,5 @@
 <?php
 
-$name = "PHP Beginner";
+$name = "Pejoeang Code";
 
 require 'views/about-culture.view.php';

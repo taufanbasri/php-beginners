@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<?php require 'partials/head.php'; ?>
+
     <h1>Our Culture at <?= $name; ?></h1>
-  </body>
-</html>
+
+<?php require 'partials/footer.php'; ?>
